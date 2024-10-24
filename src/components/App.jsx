@@ -1,17 +1,18 @@
-import MainHeading from "./MainHeading/MainHeading";
-import Message from "./Message/Message";
+
+import Profile from "./Profile/Profile";
+import userData from "../userData.json";
 
 
 const App = () => {
   return (
-    <div>
-<MainHeading />
-<Message text="Куплю фарбу" author="Олена" />
-<Message text="Продам телевізор" author="Viktor"/>
-<Message text="Куплю шапку" author="Ігор" />
-<Message />
-<Message />
-</div>
+    <>
+<Profile 
+image={userData.avatar}
+name={userData.username} 
+tag={userData.tag}
+stats={userData.stats}
+ />
+</>
   );
 };
 
